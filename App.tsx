@@ -2,6 +2,7 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, Text, TextInput, Button} from 'react-native';
 
 import NativeLocalStorage from './specs/NativeLocalStorage';
+import FlashlistView from './components/FlashlistView';
 
 const EMPTY = '<empty>';
 
@@ -43,6 +44,8 @@ function App(): React.JSX.Element {
       <Button title="Save" onPress={saveValue} />
       <Button title="Delete" onPress={deleteValue} />
       <Button title="Clear" onPress={clearAll} />
+
+      <FlashlistView />
     </SafeAreaView>
   );
 }
